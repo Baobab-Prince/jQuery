@@ -1,0 +1,57 @@
+jQuery makes it much faster and easier to write JavaScript
+jQuery is a JavaScript library of code that lets us write less and do more
+jQuery simplifies JavaScript code, AJAX, Animation, and DOM   
+   
+   
+   
+   $("selector").method('parameter'); 
+   
+   $ = accesses jQuery
+   
+   ("selector") = selects html element
+   
+   .method = calls method on selected element
+   
+   ('parameter'); = optional parameter
+
+   For example:
+   $("p").addClass('blue-background');
+
+   Doctor Smith Doesn't Make Pretty Snowmen
+   
+   Doctor = dollar sign
+   Smith = selector
+   Doesnt = dot 
+   Make = method
+   Pretty = parameter
+   Snowmen = semi-colon
+
+
+   $(.power)
+   select all elements that have the class "power"
+
+   $(#about)
+   select the single element with the id "about"
+
+   $(div)
+   select all the divs
+
+   $(div.power)
+   select div with the class power
+   
+   $('footer a.boss')
+   select all links with the class boss that are inside the footer
+
+
+   
+   
+   
+   $(document).ready(function(){
+
+   });
+
+   ~~~ or ~~~ 
+
+   $(function(){
+
+   });

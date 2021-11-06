@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLUGINS</title>
+    <link rel="stylesheet" href="Example Plugin/flipping_gallery.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="Example Plugin/jquery.flipping_gallery.js"></script>
+    <script src="Example Plugin/jquery.flipping_gallery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".gallery").flipping_gallery({
+    direction: "forward", // This is will set the flipping direction when the gallery is clicked. Options available are "forward", or "backward". The default value is forward.
+    selector: "> a", // This will let you change the default selector which by default, will look for <a> tag and generate the gallery from it. This option accepts normal CSS selectors.
+    spacing: 10, // You can set the spacing between each photo in the gallery here. The number represents the pixels between each photos. The default value is 10.
+    showMaximum: 15, // This will let you limit the number of photos that will be in the viewport. In case you have a gazillion photos, this is perfect to hide all those photos and limit only a few in the viewport.
+    enableScroll: true, // Set this to false if you don't want the plugin to override your scrolling behavior. The default value is true.
+    flipDirection: "bottom", // You can now set which direction the picture will flip to. Available options are "left", "right", "top", and "bottom". The default value is bottom.
+    autoplay: false // You can set the gallery to autoplay by defining the interval here. This option accepts value in milliseconds. The default value is false.
+  });
+      });
+    </script>
+    
+ 
+  </head>
+  <body>
+    <div class="gallery">
+        <a href="#"><img src="Example Plugin/images/1.jpg"></a>
+        <a href="#"><img src="Example Plugin/images/2.jpg"></a>
+        <a href="#"><img src="Example Plugin/images/3.jpg"></a>
+        <a href="#"><img src="Example Plugin/images/4.jpg"></a>
+        <a href="#"><img src="Example Plugin/images/5.jpg"></a>
+        ...
+      </ul>
+
+  </body>
+</html>

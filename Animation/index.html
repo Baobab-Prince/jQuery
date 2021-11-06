@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('.content-box').click(function () {
+          $('.content-box').animate(
+            {
+              width: '500px',
+              height: '-=200px', //adds a certain pixel amt from the numbers inside the animate function
+            },
+            1000
+          );
+          $('.content-after').show().animate({ opacity: '1' }, 3000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <pre>
+    <div class="content-box">
+      <p class="content-before">Click here for poetry.</p>
+      <p class="content-after">
+        Did you hear about the rose that grew 
+        from a crack in the concrete?
+        Proving nature's law is wrong it 
+        learned to walk with out having feet.
+        Funny it seems, but by keeping its dreams, 
+        it learned to breathe fresh air. 
+        Long live the rose that grew from concrete 
+        when no one else ever cared. 
+        -Tupac Shakur
+      </p>
+    </pre>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+body {
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+.css-selector {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(270deg, #07d2dd, #c8c5f3, #4a48a8);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 31s ease infinite;
+  -moz-animation: AnimationName 31s ease infinite;
+  -o-animation: AnimationName 31s ease infinite;
+  animation: AnimationName 31s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.target {
+  border: 2px solid #bbb;
+  background-color: LightSkyBlue;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.child {
+  display: block;
+  width: 90px;
+  color: white;
+  font: bold 12px;
+  padding: 5px 10px;
+  background-color: purple;
+}
+
+.sibling {
+  display: block;
+  width: 90px;
+  font: bold 12px;
+  color: black;
+  padding: 5px 10px;
+  background-color: #fe019a;
+}
